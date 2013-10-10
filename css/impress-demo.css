@@ -37,16 +37,14 @@ ol, ul {
  *  Styles
  */
 
-a:link,
-a:visited,
-a:active,
+
 a {
 	color: rgb(217,62,44);
 	text-decoration:none;
 	cursor: hand;
 }
 
-h1, h2,h3,
+h1, h2,h3,h4,
 p {
 	color: rgb(47,54,72);
 	text-shadow: 1px 1px 1px rgb(50,47,42);
@@ -64,6 +62,7 @@ h3{
 	color: rgb(50,50,210) ;
 	font-size: 55px;
 }
+h4 { font-size: 45px; }
 
 /* Fallback por si impress.js no es soportado */
 
@@ -177,5 +176,8 @@ h3{
     	
 }
 #paso-3 > h3 {
+	text-align: center;
+}
+#paso-3 > h2 {
 	text-align: center;
 }
