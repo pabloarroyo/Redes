@@ -157,6 +157,16 @@ h3{
 	height: 700px;
 	padding-top: 390px
 }
+
+#paso-3 b {
+	display: inline-block;
+    	-webkit-transition: 0.5s;
+    	-moz-transition:    0.5s;
+    	-ms-transition:     0.5s;
+    	-o-transition:      0.5s;
+    	transition:         0.5s;
+}
+
 #paso-3.present .positioning{
 	text-align: center;
 	-webkit-transform: translateY(-10px);
