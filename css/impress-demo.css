@@ -176,3 +176,6 @@ h3{
     	transform:         translateY(-10px);
     	
 }
+#paso-3 > h3 {
+	text-align: center;
+}
