@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-image: url("../img/background/az_subtle.png");
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/**
+ *  Styles
+ */
+
+a:link,
+a:visited,
+a:active,
+a {
+	color: rgb(217,62,44);
+	text-decoration:none;
+	cursor: hand;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+	color: rgb(47,54,72);
+	text-shadow: 1px 1px 1px rgb(50,47,42);
+	line-height: 1.6;
+}
+
+h1 { 
+	font-size: 120px; 
+	color: rgba(50,47,42, .5);
+}
+
+h2 { font-size: 70px; }
+h3 { font-size: 55px; }
+h4 { font-size: 45px; }
+h5 { font-size: 35px; }
+h6 { font-size: 20px; }
+
+/* Fallback por si impress.js no es soportado */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.5;
+    
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/* estilo basico para cada step */
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.4;
+}
+
+/* colocamos un poco mas opaco los slides inactivos */
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+.right {
+	float: right;
+}
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.impress-enabled          { pointer-events: none }
+.impress-enabled #impress { pointer-events: auto }
+
+
+#main-footer {
+	background-color: rgb(47,54,72);
+	bottom: 1px;
+	position: absolute;
+	padding: 10px 20px;
+	border-radius: 0 20px 0 0;
+}
+
+	#main-footer > p {
+		color: rgb(241,224,170);
+	}
+
+/* Presentaciones */
+
+#paso-1 { }
+#paso-2 { }
+
+#paso-3 > h1 { text-align: center; }
+
+#paso-4 > h1 {
+	text-align: right;
+	color: rgb(217,62,44);
+	text-shadow: 0;
+
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+#paso-5 img {
+	float: left;
+	margin-right: 80px;
+}
+
+#ing { width: 500px }
+
+#ing b, #paso-6 b, #stepscaling b {
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#paso-6.present .positioning {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-10px);
+}
+
+#ing.present .rotating {
+    -webkit-transform: rotateZ(-25deg);
+    -moz-transform:    rotateZ(-25deg);
+    -ms-transform:     rotateZ(-25deg);
+    -o-transform:      rotateZ(-25deg);
+    transform:         rotateZ(-25deg);
+}
+
+#stepscaling.present .scaling {
+    -webkit-transform: scale(0.9);
+    -moz-transform:    scale(0.9);
+    -ms-transform:     scale(0.9);
+    -o-transform:      scale(0.9);
+    transform:         scale(0.9);
+}
+
+#its-in-3d p {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d;
+    -ms-transform-style:     preserve-3d;
+    -o-transform-style:      preserve-3d;
+    transform-style:         preserve-3d;
+}
+
+#its-in-3d span,
+#its-in-3d b {
+    display: inline-block;
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+     transform:        translateZ(40px);
+            
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#its-in-3d .have {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform:    translateZ(-40px);
+    -ms-transform:     translateZ(-40px);
+    -o-transform:      translateZ(-40px);
+    transform:         translateZ(-40px);
+}
+
+#its-in-3d .you {
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#its-in-3d .noticed {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform:    translateZ(-40px);
+    -ms-transform:     translateZ(-40px);
+    -o-transform:      translateZ(-40px);
+    transform:         translateZ(-40px);
+}
+
+#its-in-3d .its {
+    -webkit-transform: translateZ(60px);
+    -moz-transform:    translateZ(60px);
+    -ms-transform:     translateZ(60px);
+    -o-transform:      translateZ(60px);
+    transform:         translateZ(60px);
+}
+
+#its-in-3d .in {
+    -webkit-transform: translateZ(-10px);
+    -moz-transform:    translateZ(-10px);
+    -ms-transform:     translateZ(-10px);
+    -o-transform:      translateZ(-10px);
+    transform:         translateZ(-10px);
+}
+
+#its-in-3d .footnote {
+    font-size: 32px;
+
+    -webkit-transform: translateZ(-10px);
+    -moz-transform:    translateZ(-10px);
+    -ms-transform:     translateZ(-10px);
+    -o-transform:      translateZ(-10px);
+    transform:         translateZ(-10px);
+}
+
+#its-in-3d.present span,
+#its-in-3d.present b {
+    -webkit-transform: translateZ(0px);
+    -moz-transform:    translateZ(0px);
+    -ms-transform:     translateZ(0px);
+    -o-transform:      translateZ(0px);
+    transform:         translateZ(0px);
+}
+
+#paso-final {
+	height: 700px;
+	padding-top: 390px
+}
+
+#img-megusta {
+	float: right;
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 200px;
+}
+
+#img-twitter {
+	float: right;
+	width: 220px;
+}
