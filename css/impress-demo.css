@@ -46,7 +46,7 @@ a {
 	cursor: hand;
 }
 
-h1, h2,
+h1, h2,h3,
 p {
 	color: rgb(47,54,72);
 	text-shadow: 1px 1px 1px rgb(50,47,42);
@@ -60,6 +60,10 @@ h1 {
 
 h2 { font-size: 70px; }
 
+h3{
+	color: rgb(50,50,210) ;
+	font-size: 55px;
+}
 
 /* Fallback por si impress.js no es soportado */
 
@@ -149,7 +153,10 @@ h2 { font-size: 70px; }
 
 
 
-#paso-final {
+#paso-2 {
 	height: 700px;
 	padding-top: 390px
+}
+#paso-3 {
+	text-align: center;
 }
