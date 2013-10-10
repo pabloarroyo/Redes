@@ -44,7 +44,7 @@ a {
 	cursor: hand;
 }
 
-h1, h2,h3,h4,
+h1, h2,h3,h4,h5,
 p {
 	color: rgb(47,54,72);
 	text-shadow: 1px 1px 1px rgb(50,47,42);
@@ -63,6 +63,10 @@ h3{
 	font-size: 55px;
 }
 h4 { font-size: 45px; }
+
+h5 {
+	font-size: 50px;
+}
 
 /* Fallback por si impress.js no es soportado */
 
