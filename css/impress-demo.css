@@ -179,15 +179,15 @@ h5 {
     	transform:         translateY(-10px);
     	
 }
-#paso-3 > h3 {
+#paso-3 > h5{
+	text-align: left;
+}
+#paso-3 > h4 {
 	text-align: center;
 }
-#paso-3 > h2 {
-	text-align: center;
-}
-#paso-4 > h4{
+#paso-4 > h2{
 	text-align: center;
 }
 #paso-5 > h5{
-	text-align: left
+	text-align: left;
 }
